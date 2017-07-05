@@ -16,16 +16,16 @@
         <!-- Home -->
         <div class="section active" id="section0">
             <div class="container">
-            <div class="content">
-                <ul class="bmenu">
-                    <li><a href="#">Bio</a></li>
-                    <li><a href="#">Etudes</a></li>
-                    <li><a href="#">Projets</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
+                <div class="content">
+                    <ul class="bmenu">
+                        <li><a href="#section1">Bio</a></li>
+                        <li><a href="#section2">Etudes</a></li>
+                        <li><a href="#section3">Projets</a></li>
+                        <li><a href="#section4">Contact</a></li>
+                    </ul>
+                </div>
 
-        </div>
+            </div>
         </div>
 
         <!-- Bio -->
@@ -42,6 +42,33 @@
         <div class="section" id="section3">
             <div class="slide" id="slide1">
                 <h1>Télécom SudParis</h1>
+                <div class="gallery">
+                    <a target="_blank" href="fjords.jpg">
+                    <img src="fjords.jpg" alt="Fjords" width="500" height="300">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="forest.jpg">
+                    <img src="forest.jpg" alt="Forest" width="300" height="200">
+                    </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="lights.jpg">
+    <img src="lights.jpg" alt="Northern Lights" width="300" height="200">
+  </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
+
+                <div class="gallery">
+                    <a target="_blank" href="mountains.jpg">
+    <img src="mountains.jpg" alt="Mountains" width="300" height="200">
+  </a>
+                    <div class="desc">Add a description of the image here</div>
+                </div>
             </div>
             <div class="slide" id="slide2">
                 <h1>Dublin City University</h1>
@@ -59,8 +86,11 @@
         <!-- Crédits
         Menu : tympanus.net
         -->
-        <div class="section" id="section5">
-            5
+        <div class="section fp-auto-height" id="section5">
+            <div class="intro footer">
+                <h1>My footer</h1>
+                <p>This could be my footer.</p>
+            </div>
         </div>
     </div>
 
@@ -71,7 +101,9 @@
     <script src="js/main.js"></script>
     <script>
         $(document).ready(function () {
-            $('#fullpage').fullpage();
+            $('#fullpage').fullpage(
+                {slidesNavigation: true}
+            );
         });
     </script>
 
