@@ -25,9 +25,6 @@
   background-color: lightgray;
 }
 
-#slide1 {
-  margin-left: 3%;
-}
 
 #section5 {
   background-color: darkgray;
@@ -48,8 +45,8 @@ a {
 
 .content {
   position: relative;
-  width: 580px;
-  margin: 0 auto;
+  width: 50%;
+  margin: auto;
 }
 
 h1 {
@@ -189,10 +186,10 @@ h1 {
 /* Gallery */
 
 div.gallery {
-    margin: 5px;
+    margin: auto;
     border: 1px solid #ccc;
     float: left;
-    width: 250px;
+    width: 45%;
 }
 
 div.gallery:hover {
@@ -201,7 +198,6 @@ div.gallery:hover {
 
 div.gallery img {
     width: 100%;
-    height: auto;
 }
 
 div.desc {
