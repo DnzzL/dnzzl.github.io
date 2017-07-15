@@ -8,11 +8,35 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/jquery.fullPage.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-  <div id="fullpage">
 
+  <nav class="nav">
+    <div class="burger">
+      <div class="burger__patty"></div>
+    </div>
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#home" class="nav__link c-blue"><i class="fa fa-home"></i></a>
+      </li>
+      <li class="nav__item">
+        <a href="#bio" class="nav__link c-blue"><i class="fa fa-align-justify"></i></a>
+      </li>
+      <li class="nav__item">
+        <a href="#etudes" class="nav__link c-yellow scrolly"><i class="fa fa-graduation-cap"></i></a>
+      </li>
+      <li class="nav__item">
+        <a href="#projets" class="nav__link c-red"><i class="fa fa-code-fork"></i></a>
+      </li>
+      <li class="nav__item">
+        <a href="#contact" class="nav__link c-green"><i class="fa fa-address-card-o"></i></a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="fullpage">
     <!-- Home -->
     <div class="section active" id="section0">
       <div class="container">
@@ -25,18 +49,24 @@
             <li><a href="#credits">Crédits</a></li>
           </ul>
         </div>
-
       </div>
     </div>
 
     <!-- Bio -->
     <div class="section" id="section1">
-      1
+      <h1>
+        <em>Bio</em>
+      </h1>
     </div>
 
     <!-- Etudes -->
     <div class="section" id="section2">
-      2
+      <h1>
+        <em>Etudes</em>
+      </h1>
+      <h2> Lycée et classes préparatoires </h2>
+      <h2> Télécom SudParis </h2>
+      <h2> Dublin City University </h2>
     </div>
 
     <!-- Projets -->
@@ -44,33 +74,44 @@
 
       <div class="slide active" id="slide1 ">
         <div class="content">
-          <div class="gallery">
-            <a target="_blank" href="fjords.jpg">
+          <h1><em>Projets</em></h1>
+          <em>Télécom SudParis</em>
+          <hr>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="fjords.jpg">
                     <img src="fjords.jpg" alt="Fjords">
                     </a>
-            <div class="desc">Add a description of the image here</div>
+              <div class="desc">Add a description of the image here</div>
+            </div>
           </div>
 
-          <div class="gallery">
-            <a target="_blank" href="forest.jpg">
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="forest.jpg">
                     <img src="forest.jpg" alt="Forest">
                     </a>
-            <div class="desc">Add a description of the image here</div>
+              <div class="desc">Add a description of the image here</div>
+            </div>
           </div>
 
-          <div class="gallery">
-            <a target="_blank" href="lights.jpg">
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="lights.jpg">
             <img src="lights.jpg" alt="Northern Lights">
         </a>
-            <div class="desc">Add a description of the image here</div>
+              <div class="desc">Add a description of the image here</div>
+            </div>
           </div>
 
-          <div class="gallery">
-            <a target="_blank" href="mountains.jpg">
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="mountains.jpg">
             <img src="mountains.jpg" alt="Mountains">
         </a>
-            <div class="desc">Add a description of the image here</div>
+              <div class="desc">Add a description of the image here</div>
 
+            </div>
           </div>
         </div>
       </div>
@@ -78,70 +119,92 @@
       <div class="slide" id="slide2">
         <div class="intro">
           <div class="content">
-          <div class="gallery">
-            <a target="_blank" href="fjords.jpg">
+            <h1><em>Projets</em></h1>
+            <em>Dublin City University</em>
+            <hr>
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="fjords.jpg">
                     <img src="fjords.jpg" alt="Fjords">
                     </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+            </div>
 
-          <div class="gallery">
-            <a target="_blank" href="forest.jpg">
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="forest.jpg">
                     <img src="forest.jpg" alt="Forest">
                     </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+            </div>
 
-          <div class="gallery">
-            <a target="_blank" href="lights.jpg">
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="lights.jpg">
             <img src="lights.jpg" alt="Northern Lights">
         </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+            </div>
 
-          <div class="gallery">
-            <a target="_blank" href="mountains.jpg">
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="mountains.jpg">
             <img src="mountains.jpg" alt="Mountains">
         </a>
-            <div class="desc">Add a description of the image here</div>
+                <div class="desc">Add a description of the image here</div>
 
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </div>
 
       <div class="slide" id="slide3">
         <div class="intro">
           <div class="content">
-          <div class="gallery">
-            <a target="_blank" href="fjords.jpg">
+            <h1><em>Projets</em></h1>
+            <em>Personnel</em>
+            <hr>
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="fjords.jpg">
                     <img src="fjords.jpg" alt="Fjords">
                     </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+            </div>
 
-          <div class="gallery">
-            <a target="_blank" href="forest.jpg">
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="forest.jpg">
                     <img src="forest.jpg" alt="Forest">
                     </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+            </div>
 
-          <div class="gallery">
-            <a target="_blank" href="lights.jpg">
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="lights.jpg">
             <img src="lights.jpg" alt="Northern Lights">
         </a>
-            <div class="desc">Add a description of the image here</div>
-          </div>
+                <div class="desc">Add a description of the image here</div>
+              </div>
+            </div>
 
-          <div class="gallery">
-            <a target="_blank" href="mountains.jpg">
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="mountains.jpg">
             <img src="mountains.jpg" alt="Mountains">
         </a>
-            <div class="desc">Add a description of the image here</div>
+                <div class="desc">Add a description of the image here</div>
 
+              </div>
+            </div>
           </div>
-        </div>
         </div>
       </div>
 
@@ -149,11 +212,28 @@
 
     <!-- Contact -->
     <div class="section" id="section4">
-      4
+      <h1>
+        <em>Contact</em>
+      </h1>
+      <div class="card">
+        <img src="img.jpg" alt="John">
+        <div class="card-container">
+          <h1>Thomas Legrand</h1>
+          <p class="card-title">Etudiant Data Science</p>
+          <p>Télécom SudParis</p>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
+          <a href="#"><i class="fa fa-envelope-o"></i></a>
+          <a href="#"><i class="fa fa-envelope-o"></i></a>
+          <p><button>Contact</button></p>
+        </div>
+      </div>
     </div>
 
     <!-- Crédits
-        Menu : tympanus.net
+        Menu: Vertical Layout dcrazed
+        Headers: The Correct Pronounciation By Daniel Burrows
+        Gallery: w3schools
         -->
     <div class="section fp-auto-height" id="section5">
       <div class="intro footer">
@@ -167,18 +247,8 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery.fullPage.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/menu.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('#fullpage').fullpage({
-        //Navigation
-        anchors: ['home', 'bio', 'etudes', 'projets', 'contact', 'credits'],
-        slidesNavigation: true,
-        lazyLoading: true
-      });
-    });
-
-  </script>
 
 </body>
 
