@@ -6,6 +6,7 @@ $(document).ready(function () {
         //Navigation
         anchors: ['home', 'bio', 'etudes', 'projets', 'contact', 'credits'],
         slidesNavigation: true,
-        lazyLoading: true
+        lazyLoading: true,
+        verticalCentered: true
     });
 });

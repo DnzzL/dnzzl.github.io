@@ -277,6 +277,29 @@ em::after {
   left: 43px;
 }
 
+/* Skill bars */
+
+.progress {
+  position: relative;
+  margin-bottom: 10px;
+  height: 25px;
+  width: 50%;
+}
+.progress > .progress-type {
+	position: absolute;
+	left: 0px;
+	font-weight: 800;
+	padding: 1px 50px 2px 5px;
+	color: rgb(255, 255, 255);
+	background-color: rgba(25, 25, 25, 0.2);
+}
+.progress > .progress-completed {
+	position: absolute;
+	right: 0px;
+	font-weight: 800;
+	padding: 3px 10px 2px;
+}
+
 /* Gallery */
 
 div.gallery {
@@ -297,11 +320,13 @@ div.desc {
   text-align: center;
 }
 
-* {
-  box-sizing: border-box;
+.responsive3 {
+  padding: 0 3px;
+  float: left;
+  width: 32.99999%;
 }
 
-.responsive {
+.responsive4 {
   padding: 0 3px;
   float: left;
   width: 24.99999%;
