@@ -2,7 +2,20 @@
 
 #section0 {
   background-image: url("../images/background.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   color: white
+}
+
+#section0 a { color: black;
+  font-family: 'Raleway',sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  font-style: normal;
+  line-height: 72px;
+  margin: 0 0 24px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 #section1,
@@ -22,7 +35,7 @@
 }
 
 #section5 {
-  background-color: gray;
+  background-color: lightgray;
 }
 
 .container {
@@ -50,7 +63,6 @@ h1 {
   font-family: 'Cardo', serif;
   font-size: 1.2em;
   font-weight: normal;
-  font-style: italic;
   letter-spacing: 0.1em;
   line-height: 2.2em;
 }
