@@ -440,17 +440,6 @@ em::after {
   -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
 
-@media (max-width: 990px) {
-  .img-responsive {
-    width: 100px;
-    height: auto;
-  }
-
-  .gallery-container p {
-    display: none;
-  }
-}
-
 /* Card */
 
 .card {
