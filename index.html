@@ -39,14 +39,14 @@
   <div id="fullpage">
     <!-- Home -->
     <div class="section active" id="section0">
-      <div class="header">
-        <h1>
-          <a href="" class="typewrite" data-period="2000" data-type='[ "Bonjour,", "Je suis Thomas Legrand.",
-    "Etudiant en Data Science.", "Voici mon site." ]'>
-    <span class="wrap"></span>
-  </a>
-        </h1>
-        <h2>Télécom SudParis</h2>
+      <div id="header">
+        <a href="/" id="logo">Thomas Legrand </a>
+        <ul id="header-menu">
+          <li><a href="#bio"><span>Bio</span></a></li>
+          <li><a href="#etudes"><span>Etudes</span></a></li>
+          <li><a href="#projets"><span>Projets</span></a></li>
+          <li><a href="#contact"><span>Contact</span></a></li>
+        </ul>
       </div>
     </div>
 
@@ -55,6 +55,49 @@
       <h1>
         <em>Bio</em>
       </h1>
+      <div id="bio-content">
+        <div class="row">
+          <div class="col-md-1">
+          </div>
+          <div class="col-md-4">
+            <h6 id="investissement-title">
+              <em>Investissement.</em>
+            </h6>
+            <p>
+              Je suis quelqu'un de très curieux et qui aime découvrir de nouvelles choses, c'est pourquoi je me tiens au courant des nouvelles
+              technologies dans de nombreux domaines. Je fais preuve d'organisation et de détermination pour mener à bien
+              les projets qui me sont confiés.
+            </p>
+          </div>
+          <div class="col-md-2">
+          </div>
+          <div class="col-md-4">
+            <h6 id="international-title">
+              <em>International.</em>
+            </h6>
+            <p>
+              Avoir un profil tourné vers l'International est nécessaire pour un ingénieur de nos jours. Ainsi, je donne beaucoup d'importance
+              aux langues étrangères (anglais, allemand, et notions de mandarin). Aussi, j'ai également étudié un semestre
+              à Dublin City University
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
+            <h6 id="sport-title">
+              <em>Sport.</em>
+            </h6>
+            <p>
+              Pratiquer un sport permet de développer le travail d'équipe, la cohésion et la concentration au quotidien. Pour atteindre
+              un bon niveau, il est également nécessaire de beaucoup s'investir et savoir se remettre en question. J'ai eu
+              l'occasion de pratiquer le football pendant de nombreuses années, mais surtout l'aviron où j'ai pris part à
+              3 reprises aux championnats de France.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Etudes -->
@@ -129,168 +172,152 @@
     <div class="section" id="section3">
 
       <div class="slide active" id="slide1 ">
-        <div class="content">
-          <h1><em>Projets</em></h1>
-          <em>Télécom SudParis</em>
+        <h1><em>Projets</em></h1>
+        <em>Télécom SudParis</em>
+        <div class="gallery-container">
           <hr>
-          <div class="gallery-content">
-            <div class="responsive3">
-              <div class="gallery">
-                <a target="_blank" href="https://github.com/DnzzL/Assemblee-Generale">
-                    <img src="images/java.png" alt="Java">
-                    </a>
-                <div class="desc">Assemblée Générale - Java</div>
-              </div>
+          <div class="row">
+            <div class="col-md-4">
+              <a target="_blank" href="https://github.com/DnzzL/Assemblee-Generale">
+                 <img class="img-responsive" src="images/java.png" alt="Java" />
+                </a>
+              <p>Assemblée Générale - Java
+                <p>
             </div>
-
-            <div class="responsive3">
-              <div class="gallery">
-                <a target="_blank" href="https://github.com/DnzzL/Agence-voyage">
-                    <img src="images/web.jpg" alt="Web">
-                    </a>
-                <div class="desc">Agence de voyage - Web</div>
-              </div>
+            <div class="col-md-4">
+              <a target="_blank" href="https://github.com/DnzzL/Agence-voyage">
+                  <img class="img-responsive" src="images/web.jpg" alt="Web" />
+                </a>
+              <p>Agence de voyage - Web</p>
             </div>
-
-            <div class="responsive3">
-              <div class="gallery">
-                <a target="_blank" href="https://github.com/DnzzL/Jeu-2D">
-            <img src="images/java.png" alt="Java">
-        </a>
-                <div class="desc">Jeu vidéo 2D - Java</div>
-              </div>
+            <div class="col-md-4">
+              <a target="_blank" href="https://github.com/DnzzL/Jeu-2D">
+                  <img class="img-responsive" src="images/java.png" alt="Java" />
+                </a>
+              <p>Jeu vidéo 2D - Java
+                <p>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="slide" id="slide2">
-        <div class="intro">
-          <div class="content">
+        <div class="slide" id="slide2">
+          <div class="intro">
             <h1><em>Projets</em></h1>
             <em>Dublin City University</em>
-            <hr>
-            <div class="gallery-content">
-              <div class="responsive3">
-                <div class="gallery">
+            <div class="gallery-container">
+              <hr>
+              <div class="row">
+                <div class="col-md-4">
                   <a target="_blank" href="https://github.com/DnzzL/Chicago-Crimes-Dataset">
-                    <img src="images/python.png" alt="Python">
-                    </a>
-                  <div class="desc">Chicago crimes analysis - Python</div>
+                      <img class="img-responsive" src="images/python.png" alt="Java" />
+                      </a>
+                  <p>Chicago crimes analysis - Python
+                    <p>
                 </div>
-              </div>
-
-              <div class="responsive3">
-                <div class="gallery">
-                  <a target="_blank" href="forest.jpg">
-                    <img src="images/python.png" alt="Python">
-                    </a>
-                  <div class="desc">Stock Prediction with Keras - Python</div>
+                <div class="col-md-4">
+                  <a target="_blank" href="#">
+                        <img class="img-responsive" src="images/python.png" alt="Web" />
+                      </a>
+                  <p>Stock Prediction with Keras - Python</p>
                 </div>
-              </div>
-
-              <div class="responsive3">
-                <div class="gallery">
-                  <a target="_blank" href="lights.jpg">
-            <img src="images/hadoop.jpg" alt="Hadoop">
-        </a>
-                  <div class="desc">Stack Exchange assignment - Hadoop</div>
+                <div class="col-md-4">
+                  <a target="_blank" href="#">
+                        <img class="img-responsive" src="images/hadoop.jpg" alt="Java" />
+                      </a>
+                  <p>Stack Exchange assignment - Hadoop
+                    <p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="slide" id="slide3">
-        <div class="intro">
-          <div class="content">
+        <div class="slide" id="slide3">
+          <div class="intro">
             <h1><em>Projets</em></h1>
             <em>Personnel</em>
-            <hr>
-            <div class="responsive3">
-              <div class="gallery">
-                <a target="_blank" href="https://github.com/DnzzL/dnzzl.github.io">
-                    <img src="images/web.jpg" alt="Portofolio">
-                    </a>
-                <div class="desc">Portofolio</div>
-              </div>
-            </div>
-
-            <div class="responsive3">
-              <div class="gallery">
-                <a target="_blank" href="forest.jpg">
-                    <img src="images/r.png" alt="Incoming">
-                    </a>
-                <div class="desc">Incoming R project</div>
-              </div>
-            </div>
-
-            <div class="responsive3">
-              <div class="gallery">
-                <a target="_blank" href="lights.jpg">
-            <img src="images/python.png" alt="Incoming">
-        </a>
-                <div class="desc">Incoming Python project</div>
+            <div class="gallery-container">
+              <hr>
+              <div class="row">
+                <div class="col-md-4">
+                  <a target="_blank" href="https://github.com/DnzzL/dnzzl.github.io">
+                      <img class="img-responsive" src="images/web.jpg" alt="Web" />
+                      </a>
+                  <p>Portofolio - Web
+                    <p>
+                </div>
+                <div class="col-md-4">
+                  <a target="_blank" href="#">
+                        <img class="img-responsive" src="images/r.png" alt="R" />
+                      </a>
+                  <p>Incoming R project</p>
+                </div>
+                <div class="col-md-4">
+                  <a target="_blank" href="#">
+                        <img class="img-responsive" src="images/python.png" alt="Python" />
+                      </a>
+                  <p>Incoming R project
+                    <p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      </div>
 
-    </div>
-
-    <!-- Contact -->
-    <div class="section" id="section4">
-      <h1>
-        <em>Contact</em>
-      </h1>
-      <div class="card">
-        <img src="images/photo.jpg" width="150px" alt="Thomas">
-        <div class="card-container">
-          <h1>Thomas Legrand</h1>
-          <p class="card-title">Etudiant Data Science</p>
-          <p>Télécom SudParis</p>
-          <a href="https://www.linkedin.com/in/thomas-d-legrand/" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <a href="https://github.com/DnzzL" target="_blank"><i class="fa fa-github"></i></a>
-          <a href="mailto:thomas.legrand@telecom-sudparis.eu?&cc=legrand.thomas5@hotmail.fr"><i class="fa fa-envelope-o"></i></a>
+      <!-- Contact -->
+      <div class="section" id="section4">
+        <h1>
+          <em>Contact</em>
+        </h1>
+        <div class="card">
+          <img src="images/photo.jpg" width="150px" alt="Thomas">
+          <div class="card-container">
+            <h1>Thomas Legrand</h1>
+            <p class="card-title">Etudiant Data Science</p>
+            <p>Télécom SudParis</p>
+            <a href="https://www.linkedin.com/in/thomas-d-legrand/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/DnzzL" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="mailto:thomas.legrand@telecom-sudparis.eu?&cc=legrand.thomas5@hotmail.fr"><i class="fa fa-envelope-o"></i></a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Crédits
-        Banner: JS Typewriter by vipulmirajkar
+      <!-- Crédits
+        Header: New header design by Johan van Tongeren
         Menu: Vertical Layout by dcrazed
-        Headers: The Correct Pronounciation By Daniel Burrows
+        Typography: The Correct Pronounciation By Daniel Burrows
         Timeline: Horizontal & vertical bootstrap timeline by wdmg
-        Gallery: w3schools
+        Gallery: Simple Responsive Image Gallery by rampatil
         -->
-    <div class="section fp-auto-height" id="section5">
-      <div class="intro footer">
-        <div class="row">
-        <p><b>Banner images</b>: by Freepik</p>
-        <p><b>Banner</b>: JS Typewriter by vipulmirajkar</p>
+      <div class="section fp-auto-height" id="section5">
+        <div class="intro footer">
+          <div class="row">
+            <p><b>Banner</b>: New header design by Johan van Tongeren</p>
+          </div>
+          <div class="row">
+            <p><b>Menu</b>: Vertical Layout dcrazed by dcrazed</p>
+          </div>
+          <div class="row">
+            <p><b>Headers</b>: The Correct Pronounciation By Daniel Burrows</p>
+          </div>
+          <div class="row">
+            <p><b>Timeline</b>: Horizontal & vertical bootstrap timeline by wdmg</p>
+          </div>
+          <div class="row">
+            <p><b>Gallery</b>: Simple Responsive Image Gallery by rampatil</p>
+          </div>
         </div>
-      <div class="row">
-        <p><b>Menu</b>: Vertical Layout dcrazed by dcrazed</p>
-      </div>
-      <div class="row">
-        <p><b>Headers</b>: The Correct Pronounciation By Daniel Burrows</p>
-      </div>
-      <div class="row">
-        <p><b>Timeline</b>: Horizontal & vertical bootstrap timeline by wdmg</p>
-      </div>
       </div>
     </div>
-  </div>
 
-  <!-- Scripts -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.fullPage.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/main.js"></script>
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
-
