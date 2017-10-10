@@ -9,7 +9,8 @@ $(document).ready(function () {
         lazyLoading: true,
         responsiveWidth: 1,
 		responsiveHeight: 1,
-		responsiveSlides: true,
+        responsiveSlides: true,
+        scrollOverflow: true,
         verticalCentered: true,
 
         onLeave: function(index, nextIndex, direction){},
@@ -22,63 +23,30 @@ $(document).ready(function () {
     });
 });
 
-/**
- * Text animation
- */
-//made by vipul mirajkar thevipulm.appspot.com
-var TxtType = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.loopNum = 0;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
+/* Timeline */
+jQuery(document).ready(function($){
+	var timelineBlocks = $('.cd-timeline-block'),
+		offset = 0.8;
 
-    TxtType.prototype.tick = function() {
-        var i = this.loopNum % this.toRotate.length;
-        var fullTxt = this.toRotate[i];
+	//hide timeline blocks which are outside the viewport
+	hideBlocks(timelineBlocks, offset);
 
-        if (this.isDeleting) {
-        this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-        this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
+	//on scolling, show/animate timeline blocks when enter the viewport
+	$(window).on('scroll', function(){
+		(!window.requestAnimationFrame) 
+			? setTimeout(function(){ showBlocks(timelineBlocks, offset); }, 100)
+			: window.requestAnimationFrame(function(){ showBlocks(timelineBlocks, offset); });
+	});
 
-        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+	function hideBlocks(blocks, offset) {
+		blocks.each(function(){
+			( $(this).offset().top > $(window).scrollTop()+$(window).height()*offset ) && $(this).find('.cd-timeline-img, .cd-timeline-content').addClass('is-hidden');
+		});
+	}
 
-        var that = this;
-        var delta = 200 - Math.random() * 100;
-
-        if (this.isDeleting) { delta /= 2; }
-
-        if (!this.isDeleting && this.txt === fullTxt) {
-        delta = this.period;
-        this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-        this.isDeleting = false;
-        this.loopNum++;
-        delta = 500;
-        }
-
-        setTimeout(function() {
-        that.tick();
-        }, delta);
-    };
-
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
+	function showBlocks(blocks, offset) {
+		blocks.each(function(){
+			( $(this).offset().top <= $(window).scrollTop()+$(window).height()*offset && $(this).find('.cd-timeline-img').hasClass('is-hidden') ) && $(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
+		});
+	}
+});

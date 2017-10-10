@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/jquery.fullPage.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
 
 <body>
@@ -19,19 +20,29 @@
     </div>
     <ul class="nav__list">
       <li class="nav__item">
-        <a href="#home" class="nav__link c-gray"><i class="fa fa-home"></i></a>
+        <a href="#home" class="nav__link c-gray">
+          <i class="fa fa-home"></i>
+        </a>
       </li>
       <li class="nav__item">
-        <a href="#bio" class="nav__link c-blue"><i class="fa fa-align-justify"></i></a>
+        <a href="#bio" class="nav__link c-blue">
+          <i class="fa fa-align-justify"></i>
+        </a>
       </li>
       <li class="nav__item">
-        <a href="#etudes" class="nav__link c-yellow scrolly"><i class="fa fa-graduation-cap"></i></a>
+        <a href="#etudes" class="nav__link c-yellow scrolly">
+          <i class="fa fa-graduation-cap"></i>
+        </a>
       </li>
       <li class="nav__item">
-        <a href="#projets" class="nav__link c-red"><i class="fa fa-code-fork"></i></a>
+        <a href="#projets" class="nav__link c-red">
+          <i class="fa fa-code-fork"></i>
+        </a>
       </li>
       <li class="nav__item">
-        <a href="#contact" class="nav__link c-green"><i class="fa fa-address-card-o"></i></a>
+        <a href="#contact" class="nav__link c-green">
+          <i class="fa fa-address-card-o"></i>
+        </a>
       </li>
     </ul>
   </nav>
@@ -42,10 +53,26 @@
       <div id="header">
         <a href="/" id="logo">Thomas Legrand </a>
         <ul id="header-menu">
-          <li><a href="#bio"><span>Bio</span></a></li>
-          <li><a href="#etudes"><span>Etudes</span></a></li>
-          <li><a href="#projets"><span>Projets</span></a></li>
-          <li><a href="#contact"><span>Contact</span></a></li>
+          <li>
+            <a href="#bio">
+              <span>Bio</span>
+            </a>
+          </li>
+          <li>
+            <a href="#etudes">
+              <span>Etudes</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projets">
+              <span>Projets</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact">
+              <span>Contact</span>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -105,220 +132,289 @@
       <h1>
         <em>Etudes</em>
       </h1>
-      <div class="timeline-container">
-        <div class="row">
-          <div class="col-md-12">
-            <div style="display:inline-block;width:100%;overflow-y:auto;">
-              <ul class="timeline timeline-horizontal">
-                <li class="timeline-item">
-                  <div class="timeline-badge primary"><i class="glyphicon glyphicon-check"></i></div>
-                  <div class="timeline-panel">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">CPGE Lycée Fabert, Metz</h4>
-                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2013-2015</small></p>
-                    </div>
-                    <div class="timeline-body">
-                      <ul>
-                        <li>Mathématiques</li>
-                        <li>Physique</li>
-                        <li>Chimie</li>
-                        <li>Sciences de l'ingénieur</li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="timeline-item">
-                  <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
-                  <div class="timeline-panel">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">Télécom SudParis</h4>
-                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 2015-2018 </small></p>
-                    </div>
-                    <div class="timeline-body">
-                      <ul>
-                        <li>Mathématiques</li>
-                        <li>Informatique</li>
-                        <li>Réseaux</li>
-                        <li>Télécommunications</li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-                <li class="timeline-item">
-                  <div class="timeline-badge info"><i class="glyphicon glyphicon-check"></i></div>
-                  <div class="timeline-panel">
-                    <div class="timeline-heading">
-                      <h4 class="timeline-title">Dublin City University</h4>
-                      <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> January - May 2017</small></p>
-                    </div>
-                    <div class="timeline-body">
-                      <ul>
-                        <li>Machine Learning: Scikit-Learn, Keras</li>
-                        <li>Data Analytics: R, Python</li>
-                        <li>Cloud Technologies: Hadoop, Pig, Hive</li>
-                        <li>Network Security</li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
+      <section id="cd-timeline" class="cd-container">
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-picture">
+            <img src="images/cd-icon-location.svg" alt="Location">
           </div>
+          <!-- cd-timeline-img -->
+
+          <div class="cd-timeline-content">
+            <h2>CPGE Lycée Fabert, Metz</h2>
+            <p>
+              <small class="text-muted">
+                <i class="glyphicon glyphicon-time"></i> 2013-2015</small>
+            </p>
+            <p>
+              <ul>
+                <li>Mathématiques - Physique - Chimie - Sciences de l'ingénieur</li>
+              </ul>
+            </p>
+            <span class="cd-date">Sep 13</span>
+          </div>
+          <!-- cd-timeline-content -->
         </div>
-      </div>
+        <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-movie">
+            <img src="images/cd-icon-location.svg" alt="Location">
+          </div>
+          <!-- cd-timeline-img -->
+
+          <div class="cd-timeline-content">
+            <h2>Télécom SudParis</h2>
+            <p>
+              <small class="text-muted">
+                <i class="glyphicon glyphicon-time"></i> 2015-2018</small>
+            </p>
+            <p>
+              3ème année:
+              <ul>
+                <li>Risk management and financial regulation</li>
+                <li>Apprentissage statistique et données biologiques en grande dimension</li>
+                <li>Modélisation économique</li>
+                <li>Traitements statistiques des données en grande dimension</li>
+              </ul>
+            </p>
+            <a href="https://www.slideshare.net/slideshow/embed_code/key/3f1ae5TaaU0gMP" target="_blank" class="cd-read-more">Read more</a>
+            <span class="cd-date">Sep 15</span>
+          </div>
+          <!-- cd-timeline-content -->
+        </div>
+        <!-- cd-timeline-block -->
+
+        <div class="cd-timeline-block">
+          <div class="cd-timeline-img cd-location">
+            <img src="images/cd-icon-location.svg" alt="Location">
+          </div>
+          <!-- cd-timeline-img -->
+
+          <div class="cd-timeline-content">
+            <h2>Dublin City University</h2>
+            <p>
+              <small class="text-muted">
+                <i class="glyphicon glyphicon-time"></i>Jan 2017 - May 2017</small>
+            </p>
+            <p>
+              <ul>
+                <li>Machine Learning: Scikit-Learn, Keras</li>
+                <li>Data Analytics: R, Python</li>
+                <li>Cloud Technologies: Hadoop, Pig, Hive</li>
+                <li>Network Security: Ollydbg, Metasploit</li>
+              </ul>
+            </p>
+            <a href="#projets/1" class="cd-read-more">Read more</a>
+            <span class="cd-date">Jan 17</span>
+          </div>
+          <!-- cd-timeline-content -->
+        </div>
+        <!-- cd-timeline-block -->
+      </section>
+      <!-- cd-timeline -->
     </div>
 
     <!-- Projets -->
     <div class="section" id="section3">
 
       <div class="slide active" id="slide1 ">
-        <h1><em>Projets</em></h1>
+        <h1>
+          <em>Projets</em>
+        </h1>
         <em>Télécom SudParis</em>
         <div class="gallery-container">
           <hr>
-          <div class="row">
-            <div class="col-md-4">
+          <div class="responsive">
+            <div class="gallery">
               <a target="_blank" href="https://github.com/DnzzL/Assemblee-Generale">
-                 <img class="img-responsive" src="images/java.png" alt="Java" />
-                </a>
-              <p>Assemblée Générale - Java
-                <p>
+                <img class="img-responsive" src="images/java.png" alt="Java" />
+              </a>
+              <div class="desc">Assemblée Générale - Java</div>
             </div>
-            <div class="col-md-4">
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
               <a target="_blank" href="https://github.com/DnzzL/Agence-voyage">
+                <img class="img-responsive" src="images/web.jpg" alt="Web" />
+              </a>
+              <div class="desc">Agence de voyage - Web</div>
+            </div>
+          </div>
+
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://github.com/DnzzL/Jeu-2D">
+                <img class="img-responsive" src="images/java.png" alt="Java" />
+              </a>
+              <div class="desc">Jeu vidéo 2D - Java</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="slide" id="slide2">
+        <div class="intro">
+          <h1>
+            <em>Projets</em>
+          </h1>
+          <em>Dublin City University</em>
+          <div class="gallery-container">
+            <hr>
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="https://github.com/DnzzL/Chicago-Crimes-Dataset">
+                  <img class="img-responsive" src="images/python.png" alt="Python" />
+                </a>
+                <div class="desc">Chicago crimes analysis - Python</div>
+              </div>
+            </div>
+
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="https://github.com/DnzzL/dow_jones_prediction">
+                  <img class="img-responsive" src="images/python.png" alt="Python" />
+                </a>
+                <div class="desc">Stock Prediction with Keras - Python</div>
+              </div>
+            </div>
+
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="#">
+                  <img class="img-responsive" src="images/hadoop.jpg" alt="Java" />
+                </a>
+                <div class="desc">Stack Exchange assignment - Hadoop</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="slide" id="slide3">
+        <div class="intro">
+          <h1>
+            <em>Projets</em>
+          </h1>
+          <em>Personnel</em>
+          <div class="gallery-container">
+            <hr>
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="https://github.com/DnzzL/dnzzl.github.io">
                   <img class="img-responsive" src="images/web.jpg" alt="Web" />
                 </a>
-              <p>Agence de voyage - Web</p>
+                <div class="desc">Portofolio - Web</div>
+              </div>
             </div>
-            <div class="col-md-4">
-              <a target="_blank" href="https://github.com/DnzzL/Jeu-2D">
-                  <img class="img-responsive" src="images/java.png" alt="Java" />
+
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="https://github.com/DnzzL/dow_jones_prediction">
+                  <img class="img-responsive" src="images/r.png" alt="R" />
                 </a>
-              <p>Jeu vidéo 2D - Java
-                <p>
-            </div>
-          </div>
-        </div>
-
-        <div class="slide" id="slide2">
-          <div class="intro">
-            <h1><em>Projets</em></h1>
-            <em>Dublin City University</em>
-            <div class="gallery-container">
-              <hr>
-              <div class="row">
-                <div class="col-md-4">
-                  <a target="_blank" href="https://github.com/DnzzL/Chicago-Crimes-Dataset">
-                      <img class="img-responsive" src="images/python.png" alt="Python" />
-                      </a>
-                  <p>Chicago crimes analysis - Python
-                    <p>
-                </div>
-                <div class="col-md-4">
-                  <a target="_blank" href="https://github.com/DnzzL/dow_jones_prediction">
-                        <img class="img-responsive" src="images/python.png" alt="Python" />
-                      </a>
-                  <p>Stock Prediction with Keras - Python</p>
-                </div>
-                <div class="col-md-4">
-                  <a target="_blank" href="#">
-                        <img class="img-responsive" src="images/hadoop.jpg" alt="Java" />
-                      </a>
-                  <p>Stack Exchange assignment - Hadoop
-                    <p>
-                </div>
+                <div class="desc">Incoming R project</div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <div class="slide" id="slide3">
-          <div class="intro">
-            <h1><em>Projets</em></h1>
-            <em>Personnel</em>
-            <div class="gallery-container">
-              <hr>
-              <div class="row">
-                <div class="col-md-4">
-                  <a target="_blank" href="https://github.com/DnzzL/dnzzl.github.io">
-                      <img class="img-responsive" src="images/web.jpg" alt="Web" />
-                      </a>
-                  <p>Portofolio - Web
-                    <p>
-                </div>
-                <div class="col-md-4">
-                  <a target="_blank" href="#">
-                        <img class="img-responsive" src="images/r.png" alt="R" />
-                      </a>
-                  <p>Incoming R project</p>
-                </div>
-                <div class="col-md-4">
-                  <a target="_blank" href="#">
-                        <img class="img-responsive" src="images/python.png" alt="Python" />
-                      </a>
-                  <p>Incoming Python project
-                    <p>
-                </div>
+            <div class="responsive">
+              <div class="gallery">
+                <a target="_blank" href="#">
+                  <img class="img-responsive" src="images/python.png" alt="Python" />
+                </a>
+                <div class="desc">Incoming Python project</div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-      </div>
-
-      <!-- Contact -->
-      <div class="section" id="section4">
-        <h1>
-          <em>Contact</em>
-        </h1>
-        <div class="card">
-          <img src="images/photo.jpg" width="150px" alt="Thomas">
-          <div class="card-container">
-            <h1>Thomas Legrand</h1>
-            <p class="card-title">Etudiant Data Science</p>
-            <p>Télécom SudParis</p>
-            <a href="https://www.linkedin.com/in/thomas-d-legrand/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            <a href="https://github.com/DnzzL" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://www.kaggle.com/tlegrand"><i class="fa fa-code"></i></a>
-            <a href="mailto:thomas.legrand@telecom-sudparis.eu?&cc=legrand.thomas5@hotmail.fr"><i class="fa fa-envelope-o"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Crédits
-        Header: New header design by Johan van Tongeren
-        Menu: Vertical Layout by dcrazed
-        Typography: The Correct Pronounciation By Daniel Burrows
-        Timeline: Horizontal & vertical bootstrap timeline by wdmg
-        Gallery: Simple Responsive Image Gallery by rampatil
-        -->
-      <div class="section fp-auto-height" id="section5">
-        <div class="intro footer">
-          <div class="row">
-            <p><b>Banner</b>: New header design by Johan van Tongeren</p>
-          </div>
-          <div class="row">
-            <p><b>Menu</b>: Vertical Layout dcrazed by dcrazed</p>
-          </div>
-          <div class="row">
-            <p><b>Headers</b>: The Correct Pronounciation By Daniel Burrows</p>
-          </div>
-          <div class="row">
-            <p><b>Timeline</b>: Horizontal & vertical bootstrap timeline by wdmg</p>
-          </div>
-          <div class="row">
-            <p><b>Gallery</b>: Simple Responsive Image Gallery by rampatil</p>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Scripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.fullPage.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Contact -->
+    <div class="section" id="section4">
+      <h1>
+        <em>Contact</em>
+      </h1>
+      <main class='profile' ontouchstart>
+        <div class='background'></div>
+        <aside class='avatar'></aside>
+        <section class='info'>
+          <h1>Thomas Legrand</h1>
+          <h2>Etudiant Data Science</h2>
+          <ul>
+            <li>
+              <div class="badges">
+                <i class="devicon-python-plain colored"></i>
+                <i class="devicon-html5-plain colored"></i>
+                <i class="devicon-css3-plain colored"></i>
+                <i class="devicon-javascript-plain colored"></i>
+                <i class="devicon-mysql-plain colored"></i>
+              </div>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div class="contact">
+                <a class="btn btn-primary" href="https://www.linkedin.com/in/thomas-d-legrand/" target="_blank">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a class="btn btn-default" href="https://github.com/DnzzL" target="_blank">
+                  <i class="fa fa-github"></i>
+                </a>
+                <a class="btn btn-info" href="https://www.kaggle.com/tlegrand">
+                  <i class="fa fa-code"></i>
+                </a>
+                <a class="btn btn-danger" href="mailto:thomas.legrand@telecom-sudparis.eu?&amp;cc=legrand.thomas5@hotmail.fr">
+                  <i class="fa fa-envelope-o"></i>
+                </a>
+              </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <!-- Crédits
+        Header: New header design by Johan van Tongeren
+        Menu: Vertical Layout by dcrazed
+        Typography: The Correct Pronounciation By Daniel Burrows
+        Timeline: Vertical Timeline by codyhouse.co
+        Gallery: Image gallery by W3Schools
+        Card : User Profile by Gabrielle Wee
+        -->
+    <div class="section fp-auto-height" id="section5">
+      <div class="intro footer">
+        <h6>Développé par
+          <em>Thomas Legrand</em>
+        </h6>
+        <h6>Crédits</h6>
+        <ul>
+          <li>
+            <b>Banner</b>: New header design by Johan van Tongeren</li>
+          <li>
+            <b>Menu</b>: Vertical Layout dcrazed by dcrazed</li>
+          <li>
+            <b>Headers</b>: The Correct Pronounciation by Daniel Burrows</li>
+          <li>
+            <b>Timeline</b>: Vertical Timeline by codyhouse.co</li>
+          <li>
+            <b>Card</b>: User Profile by Gabrielle Wee</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/scrolloverflow.min.js"></script>
+  <script src="js/jquery.fullPage.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/menu.js"></script>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
