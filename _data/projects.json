@@ -1,42 +1,50 @@
 [
 	{
-		"slug": "cool-project",
-		"name": "Cool project 1",
+		"slug": "assemblee-generale",
+		"name": "Assemblée Générale",
 		"image": "placeholder.jpg",
-		"url": "https://www.google.com",
-		"date": "Jan 2014",
-		"tags": ["Angular JS","API"]
+		"url": "https://github.com/DnzzL/Assemblee-Generale",
+		"date": "May 2017",
+		"tags": ["Java","Télécom"]
 	},
 	{
-		"name": "Cool project 2",
+		"slug": "agence-voyage",
+		"name": "Agence de voyage",
 		"image": "placeholder.jpg",
-		"url": "#",
-		"date": "May 2014",
-		"tags": ["Python","Django"]
+		"url": "https://github.com/DnzzL/Agence-voyage",
+		"date": "May 2016",
+		"tags": ["Symfony", "Télécom"]
 	},
 	{
-		"name": "Cool project 3",
+		"slug": "jeu-2d",
+		"name": "Jeu 2D",
 		"image": "placeholder.jpg",
-		"url": "#",
-		"date": "June 2014",
-		"tags": ["HTML","JQuery","Django"]
+		"url": "https://github.com/DnzzL/Jeu-2D",
+		"date": "Jan 2016",
+		"tags": ["Java", "Télécom"]
 	},
 	{
-		"name": "Cool project 4",
+		"slug": "chicago-crimes",
+		"name": "Chicago crimes",
 		"image": "placeholder.jpg",
-		"date": "Oct 2016",
-		"tags": ["Python","nodejs"]
+		"url": "https://github.com/DnzzL/Chicago-Crimes-Dataset",
+		"date": "Mar 2017",
+		"tags": ["Python", "Sklearn", "DCU"]
 	},
 	{
-		"name": "Cool project 5",
+		"slug": "stock-predictions",
+		"name": "Stock predictions",
 		"image": "placeholder.jpg",
-		"date": "Oct 2016",
-		"tags": ["Python","nodejs"]
+		"url": "https://github.com/DnzzL/dow_jones_prediction",
+		"date": "May 2017",
+		"tags": ["Python", "Keras", "DCU"]
 	},
 	{
-		"name": "Cool project 6",
+		"slug": "spooky-author",
+		"name": "Spooky author",
 		"image": "placeholder.jpg",
-		"date": "Oct 2016",
-		"tags": ["Python","nodejs"]
+		"url": "https://www.kaggle.com/tlegrand/happy-halloween",
+		"date": "Nov 2017",
+		"tags": ["Python", "Kaggle"]
 	}
 ]
