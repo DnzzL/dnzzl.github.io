@@ -1,0 +1,48 @@
+title: Data Science blog
+description: My Personal Website and Blog
+author: Thomas Legrand
+github: https://github.com/dnzzl
+about: I am a Data Scientist. I am interested in programming and mathematics. Focused on Python and Go.
+disqus_shortname: legrand-data-science
+google_analytics: UA-XXXXXXXX-Y
+avatar_url: /static/img/photo.jpg
+
+enableTags: true
+tagarray: []
+
+collections:
+  project:
+    output: true
+    permalink: /project/:path/
+
+social:
+    - icon: fa-twitter
+      link: "https://twitter.com/thomasd_legrand"
+    - icon: fa-linkedin
+      link: "https://www.linkedin.com/in/thomas-d-legrand"
+    - icon: fa-github
+      link: "https://github.com/dnzzl"
+
+share:
+  twitter_username: thomasd_legrand
+
+urls:
+    - text: About Me
+      url: /about/
+    - text: My Projects
+      url: /projects/
+
+url: "https://dnzzl.github.io"
+baseurl: ""
+paginate: 20
+per_page: 20
+paginate_path: "/page/:num/"
+markdown: kramdown
+gems:
+  - jekyll-paginate
+  - jekyll-gist
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
