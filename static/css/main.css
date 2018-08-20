@@ -1,12 +1,11 @@
 body {
   background: #f4f4f4;;
   color: #5a6872;
-  font-family: "Aileron Regular", Helvetica, sans-serif;
-  font-size: 14pt;
+  font-family: "Quattrocento", Helvetica, sans-serif;
   font-weight: 400;
-  line-height: 1.75;
-  font-size: 18px; 
+  font-size: 16px; 
   margin: 0 0 24px;
+  text-align: justify;
 }
 hr {
   margin-top: 15px;
@@ -28,7 +27,7 @@ h1 {
   font-size: 2.1em;
   text-transform: uppercase;
   display: block;
-  font-weight: 700;
+  font-weight: 600;
   font-style: bold;
 }
 h2, h3 {
@@ -48,7 +47,7 @@ h2 {
 a, a:link, a:active {
   color: #5596e6;
   font-family: "Aileron Regular", Helvetica, sans-serif;
-  font-size: 0.9em;
+  font-size: 1em;
   margin-bottom: 3px;
   text-decoration: none;
   border-bottom-color: transparent;
@@ -120,6 +119,7 @@ div.col-sm-3 div.profile-about {
   margin-top: 15px;
   font-size: 18px;
   color: #5a6872;
+  text-align: left;
 }
 div.col-sm-3 img.profile-avatar {
   border-radius: 150px;
