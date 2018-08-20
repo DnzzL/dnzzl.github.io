@@ -195,3 +195,18 @@ div.col-sm-3 img.profile-avatar {
     margin-top: 30px;
   }
 }
+
+@font-face {
+  font-family: "Aileron Heavy";
+  src: url("../fonts/Aileron-Heavy.otf");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  src: url("../fonts/RobotoCondensed-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Quattrocento";
+  src: url("../fonts/Quattrocento-Regular.ttf");
+}
