@@ -2,7 +2,7 @@
 	{
 		"slug": "assemblee-generale",
 		"name": "Assemblée Générale",
-		"image": "placeholder.jpg",
+		"image": "property.jpg",
 		"url": "https://github.com/DnzzL/Assemblee-Generale",
 		"date": "May 2017",
 		"tags": ["Java","Télécom"]
@@ -10,7 +10,7 @@
 	{
 		"slug": "agence-voyage",
 		"name": "Agence de voyage",
-		"image": "placeholder.jpg",
+		"image": "travel.jpg",
 		"url": "https://github.com/DnzzL/Agence-voyage",
 		"date": "May 2016",
 		"tags": ["Symfony", "Télécom"]
@@ -18,7 +18,7 @@
 	{
 		"slug": "jeu-2d",
 		"name": "Jeu 2D",
-		"image": "placeholder.jpg",
+		"image": "game.jpg",
 		"url": "https://github.com/DnzzL/Jeu-2D",
 		"date": "Jan 2016",
 		"tags": ["Java", "Télécom"]
@@ -26,7 +26,7 @@
 	{
 		"slug": "chicago-crimes",
 		"name": "Chicago crimes",
-		"image": "placeholder.jpg",
+		"image": "police.jpg",
 		"url": "https://github.com/DnzzL/Chicago-Crimes-Dataset",
 		"date": "Mar 2017",
 		"tags": ["Python", "Sklearn", "DCU"]
@@ -34,7 +34,7 @@
 	{
 		"slug": "stock-predictions",
 		"name": "Stock predictions",
-		"image": "placeholder.jpg",
+		"image": "stock.jpg",
 		"url": "https://github.com/DnzzL/dow_jones_prediction",
 		"date": "May 2017",
 		"tags": ["Python", "Keras", "DCU"]
@@ -42,7 +42,7 @@
 	{
 		"slug": "spooky-author",
 		"name": "Spooky author",
-		"image": "placeholder.jpg",
+		"image": "author.jpg",
 		"url": "https://www.kaggle.com/tlegrand/happy-halloween",
 		"date": "Nov 2017",
 		"tags": ["Python", "Kaggle"]

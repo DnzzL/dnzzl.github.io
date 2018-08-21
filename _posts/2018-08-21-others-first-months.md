@@ -3,6 +3,7 @@ layout: post
 title:  "What does a Data Scientist daily ?"
 date:   2018-08-20 21:30:10 +0100
 categories: [others]
+image: ai-blur-codes.jpg
 ---
 
 Data Scientist is often presented as the trendy job at the moment. As a consequence, many, including myself, try to find their way to get this job. As courses are sometimes very theoretical, hopefully [Kaggle](https://www.kaggle.com/) competitions are there to give a taste of applied Machine Learning. Yet, it is hard to picture what a Data Scientist is really doing on a daily basis. I will try to give some insights I would have liked to know earlier, after several months of experience.
