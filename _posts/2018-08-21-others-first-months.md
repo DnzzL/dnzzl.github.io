@@ -10,7 +10,13 @@ Data Scientist is often presented as the trendy job at the moment. As a conseque
 
 ## The basics
 
-I won't go into details as many sources[^1] already talk about it, but even if probably won't do the calculations by yourself, it is important to know what is going on under the hood to be able to debug or improve your models.
+Despite you won't do the calculations by yourself, it is important to know what is going on under the hood to be able to debug or improve your models.
+
+Statistics is used in exploratory phase to get to know the data, make some transformations, look distributions.
+Linear Algebra is involved in all matrix operations, and is required to understand norms and distance between vectors.
+And of course, algorithms and optimization to find the most suitable way to solve the problem with complexity and scalability in mind.
+
+I won't go further into details as many sources[^1] already talk about it.
 
 ## Handling data
 
