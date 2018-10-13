@@ -32,7 +32,7 @@ build the project.
 
 Be aware it is easy to dive in as it is compatible with `setup.py` and `requirements.txt`.
 
-### Create Python environment
+### Create a Python environment
 
 {% highlight shell %}
 pipenv --python 3.7
