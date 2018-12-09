@@ -61,6 +61,10 @@ h3 {
   font-size: 1.25em;
 }
 
+#home a {
+  line-height: 2em;
+  font-size: 1.2em;
+}
 
 a, a:link, a:active {
   color: #5596e6;
