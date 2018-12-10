@@ -8,19 +8,25 @@ image: share-and-deploy.png
 
 Many resources focus on machine learning algorithms, which are really interesting, yet forget about the end of the cycle.
 I would like to emphasize how to easily share and deploy your Machine Learning services thanks to Docker.
+It enables to ship your source code with all the system and languages dependencies so that it works on all machines.
 
-For that purpose, we are going to train a model on the famous iris flowers dataset and as the goal is to focus on the pipeline, we will not make a deep processing on the data.
+For that purpose, we are going to train a model on the famous [iris](https://en.wikipedia.org/wiki/Iris_flower_data_set) flowers dataset and as the goal is to focus on the pipeline, we will not make a deep processing on the data.
 
 ## Training
 
 ### Source code
 
-Let's begin with importing our dataset.
-We keep Sepal Length, Sepal Width, Petal Length, Petal Width as features for our model and Species as the target we want to classify among.
+Let's begin with importing our dataset. It contains four features about sepal and petal of flowers, and the related species.
+
+We keep Sepal Length, Sepal Width, Petal Length, Petal Width as features (X) for our model and Species as the target (y) we want to classify.
 
 ![Training Imports](/static/img/share-and-deploy-ml-services/training_imports.svg "Training Imports")
 
-Then, we mimic a training pipeline with a Logistic Regression following a Principle Component Analysis, and a Grid Search with a 3 K-fold validation to find the best parameters among several possible combinations.
+Then, we mimic a training pipeline:
+
+* a [Principle Component Analysis](https://en.wikipedia.org/wiki/Principal_component_analysis) to reduce the dimensionality of our features that are redundant.
+* as our dataset is tiny, the choice of a linear is made with a [Logistic Regression](https://en.wikipedia.org/wiki/Logistic_regression).
+* finally, a Grid Search to find the best parameters among several possible combinations with a 3 [K-fold validation](https://en.wikipedia.org/wiki/Cross-validation_(statistics)) to reduce the importance of how the training data is chosen.
 
 ![Training Pipeline](/static/img/share-and-deploy-ml-services/training_training.svg "Training Pipeline")
 
@@ -32,7 +38,7 @@ Finally, we save the best estimator from Grid Search and dump our model into a f
 
 It is now time to build the Docker image containing our source code.
 We start from the official Python 3.6 image.
-Then, we only copy the `requirements.txt` from our source code, and installs the dependencies, it enables to cache these steps so that we don't have to download dependencies every time we re-build our image.
+Then, we only copy the `requirements.txt` from our source code, and install the dependencies, it enables to cache these steps so that we don't have to download dependencies every time we re-build our image.
 Finally, we copy the training file and define our entry point. As a consequence, we will just need to give parameters while running the image.
 
 ![Docker Training](/static/img/share-and-deploy-ml-services/python_training.svg "Docker Training")
@@ -73,7 +79,7 @@ I also always add `alpine-sdk`, containing git, tar, curl for debugging purpose,
 
 ![Docker Training Alpine](/static/img/share-and-deploy-ml-services/alpine_training.svg "Docker Training Alpine")
 
-As a matter of comparison, you can see we have gain a little size:
+As a matter of comparison, you can see we have reduce our image size by around 25%:
 
 ![Docker images](/static/img/share-and-deploy-ml-services/docker_images.svg "Docker images")
 
@@ -81,4 +87,4 @@ As a matter of comparison, you can see we have gain a little size:
 
 We have seen how to include Docker into the classical Machine Learning workflow, to separate concern between training and inference. You now have all the tools to share and deploy your services and think of automating the re-training of your model.
 
-You can find the whole source code on Github [here](https://github.com/dnzzl/dockerized-ml).
+You can find the whole source code on my [Github](https://github.com/dnzzl/dockerized-ml) here.
