@@ -42,28 +42,32 @@ As Kotlin can leverage the JVM ecosystem, there are already good libraries to ge
 | Purpose  | Python  | JVM  |
 |:-------|:------:|:------:|
 | Scientific computing  | Numpy  | [ND4J](https://deeplearning4j.org/docs/latest/nd4j-overview)  |
-| Dataframe  | pandas  | [Krangl (Kotlin)](https://github.com/holgerbrandl/krangl) or [Tablesaw (Java)](https://github.com/jtablesaw/tablesaw)  |
+| Dataframe  | Pandas  | [Krangl (Kotlin)](https://github.com/holgerbrandl/krangl) or [Tablesaw (Java)](https://github.com/jtablesaw/tablesaw) |
+|  Visualization | Altair or Plotly or Matplotlib | [Vegas (Scala)](https://github.com/vegas-viz/Vegas) or [Tablesaw (Java)](https://github.com/jtablesaw/tablesaw) or [Kravis (Kotlin)](https://github.com/holgerbrandl/kravis) |
 |  Machine Learning | Sklearn  | [Smile](https://github.com/haifengl/smile)  |
+|  Natural Language Processing | Spacy  | [CoreNLP](https://stanfordnlp.github.io/CoreNLP/)  |
+
+In term of features, I think these alternatives can fill all your needs except maybe for Grid Search that is not available as is in Smile contrary to Sklearn.
+
+Other than this, as a Kotlin user, of course, you would have access to the whole Spark ecosystem.
 
 JVM even has its own Deep Learning framework [DL4J](https://deeplearning4j.org/) that can integrate with Keras and really has awesome documentation.
 
-
 All things considered, I think Kotlin has the ability to be a really good fit for Machine Learning as presented by Thomas Nield[^1] during the KotlinConf.
 
-### End-to-end example
+## End-to-end example
 
 For this tutorial, I have tried Krangl that has a very nice syntax but unfortunately doesn't easily integrate with Smile.
 
 So I have decided to use Apache Spark for this tutorial, where I want to reproduce the steps of my [precedent post](/python/2018/12/09/share-and-deploy-ml-services.html).
 
+### Using Spark with Kotlin
+
+All the code for this example is available on my [GitHub](https://github.com/DnzzL/kotlin-ml)
 
 First, we need to add Spark dependencies. You can find all the details on [mvnrepository](https://mvnrepository.com/).
 
-![Dependencies](/static/img/machine-learning-kotlin/dependencies.svg "Dependencies")
-
 Then, we configure the Spark session in our `Main.kt`.
-
-![Setup](/static/img/machine-learning-kotlin/setup.svg "Setup")
 
 We are still working on our `iris.csv` dataset, so we import the data.
 We specify that the data has a header and that we want the schema to be inferred.
