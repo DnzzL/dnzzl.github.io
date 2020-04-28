@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Big Data World 2019 in short'
-date: 2020-11-20 10:30:10 +0100
+date: 2019-11-20 10:30:10 +0100
 categories: [others]
 image: conference.jpg
 ---
