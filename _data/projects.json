@@ -1,50 +1,74 @@
 [
-	{
-		"slug": "assemblee-generale",
-		"name": "Assemblée Générale",
-		"image": "property.jpg",
-		"url": "https://github.com/DnzzL/Assemblee-Generale",
-		"date": "May 2017",
-		"tags": ["Java","Télécom"]
-	},
-	{
-		"slug": "agence-voyage",
-		"name": "Agence de voyage",
-		"image": "travel.jpg",
-		"url": "https://github.com/DnzzL/Agence-voyage",
-		"date": "May 2016",
-		"tags": ["Symfony", "Télécom"]
-	},
-	{
-		"slug": "jeu-2d",
-		"name": "Jeu 2D",
-		"image": "game.jpg",
-		"url": "https://github.com/DnzzL/Jeu-2D",
-		"date": "Jan 2016",
-		"tags": ["Java", "Télécom"]
-	},
-	{
-		"slug": "chicago-crimes",
-		"name": "Chicago crimes",
-		"image": "police.jpg",
-		"url": "https://github.com/DnzzL/Chicago-Crimes-Dataset",
-		"date": "Mar 2017",
-		"tags": ["Python", "Sklearn", "DCU"]
-	},
-	{
-		"slug": "stock-predictions",
-		"name": "Stock predictions",
-		"image": "stock.jpg",
-		"url": "https://github.com/DnzzL/dow_jones_prediction",
-		"date": "May 2017",
-		"tags": ["Python", "Keras", "DCU"]
-	},
-	{
-		"slug": "spooky-author",
-		"name": "Spooky author",
-		"image": "author.jpg",
-		"url": "https://www.kaggle.com/tlegrand/happy-halloween",
-		"date": "Nov 2017",
-		"tags": ["Python", "Kaggle"]
-	}
+  {
+    "slug": "velibetter",
+    "name": "Velibetter",
+    "image": "bike.jpg",
+    "url": "https://github.com/aymericdo/velibetter",
+    "date": "February 2020",
+    "tags": ["Typescript", "Angular"]
+  },
+  {
+    "slug": "encadrement-loyers",
+    "name": "Encadrement Loyers",
+    "image": "rent.jpg",
+    "url": "https://github.com/aymericdo/loyer-paris-be",
+    "date": "October 2019",
+    "tags": ["Typescript"]
+  },
+  {
+    "slug": "molkky",
+    "name": "Molkky Companion",
+    "image": "molkky.jpg",
+    "url": "https://github.com/dnzzl/molkky",
+    "date": "April 2020",
+    "tags": ["Typescript", "React"]
+  },
+  {
+    "slug": "assemblee-generale",
+    "name": "Assemblée Générale",
+    "image": "property.jpg",
+    "url": "https://github.com/DnzzL/Assemblee-Generale",
+    "date": "May 2017",
+    "tags": ["Java", "Télécom"]
+  },
+  {
+    "slug": "agence-voyage",
+    "name": "Agence de voyage",
+    "image": "travel.jpg",
+    "url": "https://github.com/DnzzL/Agence-voyage",
+    "date": "May 2016",
+    "tags": ["Symfony", "Télécom"]
+  },
+  {
+    "slug": "jeu-2d",
+    "name": "Jeu 2D",
+    "image": "game.jpg",
+    "url": "https://github.com/DnzzL/Jeu-2D",
+    "date": "Jan 2016",
+    "tags": ["Java", "Télécom"]
+  },
+  {
+    "slug": "chicago-crimes",
+    "name": "Chicago crimes",
+    "image": "police.jpg",
+    "url": "https://github.com/DnzzL/Chicago-Crimes-Dataset",
+    "date": "Mar 2017",
+    "tags": ["Python", "Sklearn", "DCU"]
+  },
+  {
+    "slug": "stock-predictions",
+    "name": "Stock predictions",
+    "image": "stock.jpg",
+    "url": "https://github.com/DnzzL/dow_jones_prediction",
+    "date": "May 2017",
+    "tags": ["Python", "Keras", "DCU"]
+  },
+  {
+    "slug": "spooky-author",
+    "name": "Spooky author",
+    "image": "author.jpg",
+    "url": "https://www.kaggle.com/tlegrand/happy-halloween",
+    "date": "Nov 2017",
+    "tags": ["Python", "Kaggle"]
+  }
 ]
